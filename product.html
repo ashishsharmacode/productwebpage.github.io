@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product page</title>
+    <link rel="stylesheet" href="product.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="product-box">
+          <div class="all-images">
+            <div class="small-images">
+              <img src="pic1.jpeg" onclick="clickimg(this)" />
+              <img src="pic2.jpeg" onclick="clickimg(this)" />
+              <img src="pic3.jpeg" onclick="clickimg(this)" />
+              <img src="pic4.jpeg" onclick="clickimg(this)" />
+            </div>
+            <div class="main-images">
+              <img src="pic1.jpeg" id="imagebox" />
+            </div>
+          </div>
+        </div>
+
+        <div class="text">
+          <div class="content">
+            <p class="brand">Brand : Apple</p>
+            <h2>APPLE iPhone 12(White,64 GB)</h2>
+            <div class="review">
+              <span>(4.6)</span>
+            </div>
+            <div class="price-box">
+              <p class="price">&#8377;87,000</p>
+              <strike>&#8377;89,000</strike>
+            </div>
+            <p>
+              Size :
+              <select name="size">
+                <option value="select colour">select colour</option>
+                <option vaule="black">black</option>
+                <option vaule="black">blue</option>
+                <option vaule="black">green</option>
+                <option vaule="black">purple</option>
+              </select>
+            </p>
+            <p>Quantity <input type="text" value="1" /></p>
+            <button>Add to Cart</button>
+            <button>Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="product.js"></script>
+  </body>
+</html>
